@@ -1,0 +1,13 @@
+# Maven
+target/
+
+# IntelliJ IDE
+.idea/
+*.iml
+out/
+
+# VSCode
+.vscode/
+
+# Misc
+.DS_Store
