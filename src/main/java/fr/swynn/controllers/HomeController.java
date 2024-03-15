@@ -9,8 +9,6 @@ public class HomeController {
 
     @GetMapping("/")
     public ModelAndView home() {
-        final var view = new ModelAndView("index");
-        view.addObject("message", "Je t'aime, mon amour!");
-        return view;
+        return new ModelAndView("login");
     }
 }
