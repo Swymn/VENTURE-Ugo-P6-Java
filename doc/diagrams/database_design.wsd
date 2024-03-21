@@ -1,0 +1,38 @@
+@startuml "Database design"
+
+entity "User" {
+  + id
+  --
+  + email
+  + password
+  + firstname
+  + lastname
+  + balance
+  + createdAt
+  + updatedAt
+}
+
+entity "Transaction" {
+  + id
+  --
+  + senderId
+  + receiverId
+  + amount
+  + date
+  + createdAt
+  + updatedAt
+}
+
+entity "BankAccount" {
+    + id
+    --
+    + userId
+    + iban
+    + bic
+    + updatedAt
+}
+
+User ||--o{ Transaction
+User ||--o{ BankAccount
+
+@enduml

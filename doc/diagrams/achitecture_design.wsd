@@ -1,0 +1,24 @@
+@startuml "Architecture diagram"
+
+package "PayMyBuddy" {
+    package "Model" {
+        class User
+        class Transaction
+        class BankAccount
+    }
+    package "View" {
+        class UserView
+        class TransactionView
+    }
+    package "Controller" {
+        class UserController
+        class TransactionController
+    }
+}
+
+User --> UserController
+Transaction --> TransactionController
+User --> UserView
+Transaction --> TransactionView
+
+@enduml

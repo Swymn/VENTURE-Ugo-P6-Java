@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 import fr.swynn.model.User;
 
 @Controller
-public class LoginController {
+public class UserController {
 
     private static final String EMAIL_REGEX = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
 

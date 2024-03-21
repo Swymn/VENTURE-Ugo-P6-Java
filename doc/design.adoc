@@ -1,0 +1,52 @@
+= Design of PayMyBuddy =
+
+== Architecture ==
+
+The architecture of PayMyBuddy is based on mvc design pattern. The application is divided into three main parts: the model, the view and the controller. The model is the part of the application that manages the data. The view is the part of the application that displays the data to the user. The controller is the part of the application that manages the user interaction. 
+
+The model is divided into three main parts: the user, the transaction and the bank account. The user is the part of the application that manages the user data. The transaction is the part of the application that manages the transaction data. The bank account is the part of the application that manages the bank account data.
+
+The view is divided into two main parts: the user view and the transaction view. The user view is the part of the application that displays the user data to the user. The transaction view is the part of the application that displays the transaction data to the user.
+
+The controller is divided into two main parts: the user controller and the transaction controller. The user controller is the part of the application that manages the user interaction. The transaction controller is the part of the application that manages the transaction interaction.
+
+See the diagram below for a visual representation of the architecture of PayMyBuddy:
+
+include::diagrams/achitecture_design.wsd[]
+
+== Database Design ==
+
+The database design of PayMyBuddy is based on the following tables:
+
+- User: This table stores the user data.
+- Transaction: This table stores the transaction data.
+- BankAccount: This table stores the bank account data.
+
+The User table has the following columns:
+
+- id: This column stores the user id.
+- email: This column stores the user email.
+- password: This column stores the user password.
+- firstName: This column stores the user first name.
+- lastName: This column stores the user last name.
+- balance: This column stores the user balance.
+
+The Transaction table has the following columns:
+
+- id: This column stores the transaction id.
+- senderId: This column stores the sender id reference to the User table.
+- receiverId: This column stores the receiver id reference to the User table.
+- amount: This column stores the transaction amount.
+- date: This column stores the transaction date.
+
+The BankAccount table has the following columns:
+
+- id: This column stores the bank account id.
+- userId: This column stores the user id reference to the User table.
+- iban: This column stores the bank account iban.
+- bic: This column stores the bank account bic.
+
+See the diagram below for a visual representation of the database design of PayMyBuddy:
+
+include::diagrams/database_design.wsd[]
+
